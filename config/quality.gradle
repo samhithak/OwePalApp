@@ -1,0 +1,61 @@
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+apply plugin: 'pmd'
+
+android {
+    lintOptions {
+        abortOnError false
+        ignoreWarnings false
+        checkAllWarnings true
+        showAll true
+        lintConfig file("${project.rootDir}/config/lint/lint.xml")
+        textReport true
+        textOutput 'stdout'
+        xmlReport true
+        xmlOutput file('build/reports/lint/lint-report.xml')
+        htmlReport true
+        htmlOutput file('build/reports/lint/lint-report.html')
+    }
+}
+
+task findbugs(type: FindBugs, dependsOn: 'assembleDebug') {
+    description = 'Analyzes the source code using FindBugs'
+    group = 'Verification'
+    classes = fileTree('build/intermediates/classes/debug')
+    classpath = files()
+    source = [fileTree('src/main/java')]
+    effort = 'max'
+    excludeFilter = file("$project.rootDir/config/findbugs/exclude.xml")
+    ignoreFailures = true
+    includeFilter = file("$project.rootDir/config/findbugs/include.xml")
+    reportLevel = 'low'
+    reports {
+        html.destination = 'build/reports/findbugs/findbugs.html'
+        html.enabled = true
+        xml.enabled = false
+    }
+}
+
+task pmd(type: Pmd) {
+    description = 'Analyzes the source code using a custom PMD ruleset in order to find programming flaws'
+    group = 'Verification'
+    source 'src/main'
+    include '**/*.java'
+    exclude '**/gen/**'
+    exclude '**/R.java'
+    exclude '**/BuildConfig.java'
+    consoleOutput = true
+    ignoreFailures = true
+    ruleSetFiles = files("${project.rootDir}/config/pmd/ruleset.xml")
+    reports {
+        html.enabled = true
+        xml.enabled = true
+    }
+}
+
+task quality(type: Object, dependsOn: ['lint', 'findbugs', 'pmd']) {
+    description = 'Analyzes the source code using: FindBugs, Lint, and PMD'
+    group = 'Verification'
+}
+
+tasks.check.dependsOn(tasks.quality)

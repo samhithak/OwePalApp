@@ -1,0 +1,31 @@
+apply plugin: 'jacoco'
+
+task jacoco(type: JacocoReport, dependsOn: 'connectedAndroidTest') {
+    description = 'Generate Jacoco coverage reports'
+    group = 'Verification'
+    classDirectories = fileTree(
+            dir: 'build/intermediates/classes/debug',
+            excludes: ['**/R.class',
+                       '**/R$*.class',
+                       '**/*_.class',
+                       '**/*_$*.class',
+                       '**/*$ViewInjector*.*',
+                       '**/BuildConfig.*',
+                       '**/Manifest*.*']
+    )
+    def coverageSourceDirs = ['src/main/java']
+    sourceDirectories = files(coverageSourceDirs)
+    additionalSourceDirs = files(coverageSourceDirs)
+    executionData = files('build/outputs/code-coverage/connected/coverage.ec')
+    reports {
+        xml.enabled = true
+        xml.destination = 'build/reports/jacoco/jacoco.xml'
+        html.enabled = true
+        html.destination = 'build/reports/jacoco/html'
+    }
+}
+
+task coverage(type: Object, dependsOn: ['connectedAndroidTest', 'jacoco']) {
+    description = 'Analyzes the code coverage using: unit tests and jacoco'
+    group = 'Verification'
+}

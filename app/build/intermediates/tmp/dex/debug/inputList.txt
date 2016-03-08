@@ -1,0 +1,6 @@
+/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/coverage-instrumented-classes/debug
+/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-2439fe4a17399dda46e701498d19b405d982c09b.jar
+/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-135ba509c4dc6515d0e94211b3b49ccc891dec35.jar
+/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/pre-dexed/debug/jacocoagent-ec99c4ef9129f3857bb2659274c334b00600435e.jar
+/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/pre-dexed/debug/classes-c94fd803bd9b0f60cd256ce614f9a699a986de57.jar
+/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/pre-dexed/debug/classes-49ffc8519076f8f15072267a42265cf54571b96c.jar

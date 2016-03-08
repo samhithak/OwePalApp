@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp">
+
+        <ImageView
+            android:id="@+id/fragment_account_details_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reddit_grey600_48dp" />
+
+        <TextView
+            android:id="@+id/fragment_account_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/fragment_account_details_icon"
+            android:layout_toRightOf="@+id/fragment_account_details_icon"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Name"
+            android:textColor="@color/primary_color"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,NewApi" />
+
+        <LinearLayout
+            android:id="@+id/fragment_account_details_who_owes_container"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignBottom="@+id/fragment_account_details_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_account_details_who_owes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:text="Who owes"
+                android:textColor="@color/primary_color"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText,NewApi" />
+
+            <TextView
+                android:id="@+id/fragment_account_details_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_account_details_who_owes_text"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:text="$$"
+                android:textColor="@color/primary_color"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,NewApi" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragment_account_details_settle_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@color/dark_primary_color"
+            android:padding="10dp"
+            android:text="Settle Up"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/fragment_account_details_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@color/dark_primary_color"
+            android:padding="10dp"
+            android:text="Remind"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="Details:" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.samhithak.owepal.fragment.AccountFragment">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:fadeScrollbars="false"
+            android:fastScrollEnabled="true"
+            android:scrollingCache="false" />
+
+        <TextView
+            android:id="@id/android:empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="No Recent transactions"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+</LinearLayout>

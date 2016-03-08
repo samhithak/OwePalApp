@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+    defaultConfig {
+        applicationId 'com.samhithak.owepal'
+        minSdkVersion 11
+        targetSdkVersion 21
+        versionCode 1
+        versionName '1.0'
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_7
+        targetCompatibility = JavaVersion.VERSION_1_7
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            testCoverageEnabled = true
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), "${project.rootDir}/config/proguard/proguard.conf"
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    // Google Libraries
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:support-v4:21.0.3'
+    // Test Libraries
+    androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.2.1'
+    // Disabled Libraries
+    //compile fileTree(dir: 'src/main/libs', include: ['*.jar']) <-- Jars must be stored in Nexus, not in Git.
+}
+
+apply from: "${project.rootDir}/config/quality.gradle"
+apply from: "${project.rootDir}/config/coverage.gradle"

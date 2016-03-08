@@ -1,0 +1,1166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Lint Report</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" type="text/css" href="lint-report_files/hololike.css" />
+<script language="javascript" type="text/javascript"> 
+<!--
+function reveal(id) {
+if (document.getElementById) {
+document.getElementById(id).style.display = 'block';
+document.getElementById(id+'Link').style.display = 'none';
+}
+}
+//--> 
+</script>
+</head>
+<body>
+<h1>Lint Report</h1>
+<div class="titleSeparator"></div>
+Check performed at Tue Mar 08 13:35:34 PST 2016.<br/>
+0 errors and 82 warnings found:<br/><br/>
+<table class="overview">
+<tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#OldTargetApi">OldTargetApi: Target SDK attribute is not targeting latest version</a>
+</td></tr>
+<tr>
+<td class="countColumn">9</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedAttribute">UnusedAttribute: Attribute unused on older versions</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#GradleDependency">GradleDependency: Obsolete Gradle Dependency</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#NewerVersionAvailable">NewerVersionAvailable: Newer Library Versions Available</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Security">Security</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#ExportedContentProvider">ExportedContentProvider: Content provider does not require permission</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Performance">Performance</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#ObsoleteLayoutParam">ObsoleteLayoutParam: Obsolete layout params</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#UseValueOf">UseValueOf: Should use <code>valueOf</code> instead of <code>new</code></a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#Overdraw">Overdraw: Overdraw: Painting regions more than once</a>
+</td></tr>
+<tr>
+<td class="countColumn">11</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedResources">UnusedResources: Unused resources</a>
+</td></tr>
+<tr>
+<td class="countColumn">7</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#UnusedIds">UnusedIds: Unused id</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability:Icons">Usability:Icons</a>
+</td></tr>
+<tr>
+<td class="countColumn">3</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#IconDensities">IconDensities: Icon densities validation</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#IconMissingDensityFolder">IconMissingDensityFolder: Missing density folder</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Usability">Usability</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#ButtonStyle">ButtonStyle: Button should be borderless</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
+</td></tr>
+<tr>
+<td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#ContentDescription">ContentDescription: Image without <code>contentDescription</code></a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
+</td></tr>
+<tr>
+<td class="countColumn">19</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#HardcodedText">HardcodedText: Hardcoded text</a>
+</td></tr>
+<tr><td></td><td class="categoryColumn"><a href="#Bi-directional Text">Bi-directional Text</a>
+</td></tr>
+<tr>
+<td class="countColumn">4</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#RtlSymmetry">RtlSymmetry: Padding and margin symmetry</a>
+</td></tr>
+<tr>
+<td class="countColumn">11</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#RtlHardcoded">RtlHardcoded: Using left/right instead of start/end attributes</a>
+</td></tr>
+<tr>
+<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-report_files/lint-warning.png" alt="Warning" />
+<a href="#RtlEnabled">RtlEnabled: Using RTL attributes without enabling RTL support</a>
+</td></tr>
+</table>
+<br/>
+<a name="Correctness"></a>
+<div class="category"><a href="#" title="Return to top">Correctness</a><div class="categorySeparator"></div>
+</div>
+<a name="OldTargetApi"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">OldTargetApi: Target SDK attribute is not targeting latest version</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../build.gradle">../../../build.gradle</a>:9</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.</span><br /><pre class="errorlines">
+<span class="lineno">   6</span>     defaultConfig {
+<span class="lineno">   7</span>         applicationId 'com.samhithak.owepal'
+<span class="lineno">   8</span>         minSdkVersion 11
+<span class="lineno">   9</span>         <span class="errorspan">targetSdkVersion 21</span>
+<span class="lineno">  10</span>         versionCode 1
+<span class="lineno">  11</span>         versionName '1.0'
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-report_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Target SDK attribute is not targeting latest version.</div>
+<div class="explanation">
+When your application runs on a version of Android that is more recent than your <code>targetSdkVersion</code> specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the <code>targetSdkVersion</code> is less than 14, your app may get an option button in the UI.<br/>
+<br/>
+To fix this issue, set the <code>targetSdkVersion</code> to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/reference/android/os/Build.VERSION_CODES.html">http://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</div><br/>To suppress this error, use the issue id "OldTargetApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedAttribute"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedAttribute: Attribute unused on older versions</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:30</span>: <span class="message">Attribute <code>fontFamily</code> is only used in API level 16 and higher (current min is 11)</span><br /><pre class="errorlines">
+<span class="lineno">  27</span>             android:layout_height="?android:attr/listPreferredItemHeight"
+<span class="lineno">  28</span>             android:layout_toRightOf="@+id/account_list_item_icon"
+<span class="lineno">  29</span>             android:ellipsize="end"
+<span class="lineno">  30</span>             <span class="errorspan">android:fontFamily="sans-serif-light"</span>
+<span class="lineno">  31</span>             android:gravity="center_vertical"
+<span class="lineno">  32</span>             android:paddingEnd="5dp"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:56</span>: <span class="message">Attribute <code>fontFamily</code> is only used in API level 16 and higher (current min is 11)</span><br /><pre class="errorlines">
+<span class="lineno">  53</span>                 android:layout_width="wrap_content"
+<span class="lineno">  54</span>                 android:layout_height="wrap_content"
+<span class="lineno">  55</span>                 android:ellipsize="end"
+<span class="lineno">  56</span>                 <span class="errorspan">android:fontFamily="sans-serif-light"</span>
+<span class="lineno">  57</span>                 android:text="Who owes"
+<span class="lineno">  58</span>                 android:textColor="@color/primary_color"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:69</span>: <span class="message">Attribute <code>fontFamily</code> is only used in API level 16 and higher (current min is 11)</span><br /><pre class="errorlines">
+<span class="lineno">  66</span>                 android:layout_height="wrap_content"
+<span class="lineno">  67</span>                 android:layout_below="@+id/account_list_item_who_owes_text"
+<span class="lineno">  68</span>                 android:ellipsize="end"
+<span class="lineno">  69</span>                 <span class="errorspan">android:fontFamily="sans-serif-light"</span>
+<span class="lineno">  70</span>                 android:text="$$"
+<span class="lineno">  71</span>                 android:textColor="@color/primary_color"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account.xml">../../../src/main/res/layout/fragment_account.xml</a>:116</span>: <span class="message">Attribute <code>fontFamily</code> is only used in API level 16 and higher (current min is 11)</span><br /><pre class="errorlines">
+<span class="lineno"> 113</span>             android:id="@id/android:empty"
+<span class="lineno"> 114</span>             android:layout_width="match_parent"
+<span class="lineno"> 115</span>             android:layout_height="match_parent"
+<span class="lineno"> 116</span>             <span class="errorspan">android:fontFamily="sans-serif-light"</span>
+<span class="lineno"> 117</span>             android:gravity="center"
+<span class="lineno"> 118</span>             android:text="Start adding accounts"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:32</span>: <span class="message">Attribute <code>fontFamily</code> is only used in API level 16 and higher (current min is 11)</span><br /><pre class="errorlines">
+<span class="lineno">  29</span>             android:layout_toEndOf="@+id/fragment_account_details_icon"
+<span class="lineno">  30</span>             android:layout_toRightOf="@+id/fragment_account_details_icon"
+<span class="lineno">  31</span>             android:ellipsize="end"
+<span class="lineno">  32</span>             <span class="errorspan">android:fontFamily="sans-serif-light"</span>
+<span class="lineno">  33</span>             android:gravity="center_vertical"
+<span class="lineno">  34</span>             android:singleLine="true"
+</pre>
+<button id="UnusedAttributeDivLink" onclick="reveal('UnusedAttributeDiv');" />+ 4 More Occurrences...</button>
+<div id="UnusedAttributeDiv" style="display: none">
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:58</span>: <span class="message">Attribute <code>fontFamily</code> is only used in API level 16 and higher (current min is 11)</span><br /><pre class="errorlines">
+<span class="lineno">  55</span>                 android:layout_height="wrap_content"
+<span class="lineno">  56</span>                 android:layout_marginTop="5dp"
+<span class="lineno">  57</span>                 android:ellipsize="end"
+<span class="lineno">  58</span>                 <span class="errorspan">android:fontFamily="sans-serif-light"</span>
+<span class="lineno">  59</span>                 android:text="Who owes"
+<span class="lineno">  60</span>                 android:textColor="@color/primary_color"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:71</span>: <span class="message">Attribute <code>fontFamily</code> is only used in API level 16 and higher (current min is 11)</span><br /><pre class="errorlines">
+<span class="lineno">  68</span>                 android:layout_below="@+id/fragment_account_details_who_owes_text"
+<span class="lineno">  69</span>                 android:layout_marginBottom="5dp"
+<span class="lineno">  70</span>                 android:ellipsize="end"
+<span class="lineno">  71</span>                 <span class="errorspan">android:fontFamily="sans-serif-light"</span>
+<span class="lineno">  72</span>                 android:text="$$"
+<span class="lineno">  73</span>                 android:textColor="@color/primary_color"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:143</span>: <span class="message">Attribute <code>fontFamily</code> is only used in API level 16 and higher (current min is 11)</span><br /><pre class="errorlines">
+<span class="lineno"> 140</span>             android:id="@id/android:empty"
+<span class="lineno"> 141</span>             android:layout_width="match_parent"
+<span class="lineno"> 142</span>             android:layout_height="match_parent"
+<span class="lineno"> 143</span>             <span class="errorspan">android:fontFamily="sans-serif-light"</span>
+<span class="lineno"> 144</span>             android:gravity="center"
+<span class="lineno"> 145</span>             android:text="No Recent transactions"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_history.xml">../../../src/main/res/layout/fragment_history.xml</a>:20</span>: <span class="message">Attribute <code>fontFamily</code> is only used in API level 16 and higher (current min is 11)</span><br /><pre class="errorlines">
+<span class="lineno">  17</span> 			android:id="@id/android:empty"
+<span class="lineno">  18</span> 			android:layout_width="match_parent"
+<span class="lineno">  19</span> 			android:layout_height="match_parent"
+<span class="lineno">  20</span> 			<span class="errorspan">android:fontFamily="sans-serif-light"</span>
+<span class="lineno">  21</span> 			android:gravity="center"
+<span class="lineno">  22</span> 			android:text="No Transactions to display"
+</pre>
+</div>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Attribute unused on older versions.</div>
+<div class="explanation">
+This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the the <code>minSdkVersion</code> attribute).<br/>
+<br/>
+This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance of functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.<br/>
+<br/>
+Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new <code>&lt;tag></code> element in layouts introduced in API 21.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedAttribute" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="GradleDependency"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">GradleDependency: Obsolete Gradle Dependency</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../build.gradle">../../../build.gradle</a>:33</span>: <span class="message">A newer version of com.android.support:appcompat-v7 than 21.0.3 is available: 23.1.1</span><br /><pre class="errorlines">
+<span class="lineno">  30</span> 
+<span class="lineno">  31</span> dependencies {
+<span class="lineno">  32</span>     // Google Libraries
+<span class="lineno">  33</span>     <span class="errorspan">compile 'com.android.support:appcompat-v7:21.0.3'</span>
+<span class="lineno">  34</span>     compile 'com.android.support:support-v4:21.0.3'
+<span class="lineno">  35</span>     // Test Libraries
+</pre>
+<span class="location"><a href="../../../build.gradle">../../../build.gradle</a>:34</span>: <span class="message">A newer version of com.android.support:support-v4 than 21.0.3 is available: 23.1.1</span><br /><pre class="errorlines">
+<span class="lineno">  31</span> dependencies {
+<span class="lineno">  32</span>     // Google Libraries
+<span class="lineno">  33</span>     compile 'com.android.support:appcompat-v7:21.0.3'
+<span class="lineno">  34</span>     <span class="errorspan">compile 'com.android.support:support-v4:21.0.3'</span>
+<span class="lineno">  35</span>     // Test Libraries
+<span class="lineno">  36</span>     androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.2.1'
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-report_files/lint-run.png" />
+<br>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Obsolete Gradle Dependency.</div>
+<div class="explanation">
+This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "GradleDependency" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="NewerVersionAvailable"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">NewerVersionAvailable: Newer Library Versions Available</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../build.gradle">../../../build.gradle</a>:36</span>: <span class="message">A newer version of com.jayway.android.robotium:robotium-solo than 5.2.1 is available: 5.5.4</span><br /><pre class="errorlines">
+<span class="lineno">  33</span>     compile 'com.android.support:appcompat-v7:21.0.3'
+<span class="lineno">  34</span>     compile 'com.android.support:support-v4:21.0.3'
+<span class="lineno">  35</span>     // Test Libraries
+<span class="lineno">  36</span>     <span class="errorspan">androidTestCompile 'com.jayway.android.robotium:robotium-solo:5.2.1'</span>
+<span class="lineno">  37</span>     // Disabled Libraries
+<span class="lineno">  38</span>     //compile fileTree(dir: 'src/main/libs', include: ['*.jar']) &lt;-- Jars must be stored in Nexus, not in Git.
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-report_files/lint-run.png" />
+<br>
+Priority: 4 / 10<br/>
+Category: Correctness</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Newer Library Versions Available.</div>
+<div class="explanation">
+This detector checks with a central repository to see if there are newer versions available for the dependencies used by this project.<br/>
+This is similar to the <code>GradleDependency</code> check, which checks for newer versions available in the Android SDK tools and libraries, but this works with any MavenCentral dependency, and connects to the library every time, which makes it more flexible but also <b>much</b> slower.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NewerVersionAvailable" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Security"></a>
+<div class="category"><a href="#" title="Return to top">Security</a><div class="categorySeparator"></div>
+</div>
+<a name="ExportedContentProvider"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ExportedContentProvider: Content provider does not require permission</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/AndroidManifest.xml">../../../src/main/AndroidManifest.xml</a>:21</span>: <span class="message">Exported content providers can provide access to potentially sensitive data</span><br /><pre class="errorlines">
+<span class="lineno">  18</span>             &lt;/intent-filter>
+<span class="lineno">  19</span>         &lt;/activity>
+<span class="lineno">  20</span> 
+<span class="lineno">  21</span> 		<span class="errorspan">&lt;provider android:name="com.samhithak.owepal.provider.AccountProvider"</span>
+<span class="lineno">  22</span> 		android:authorities="com.samhithak.owepal.model.Account">
+<span class="lineno">  23</span> 	&lt;/provider>
+</pre>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Security</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Content provider does not require permission.</div>
+<div class="explanation">
+Content providers are exported by default and any application on the system can potentially use them to read and write data. If the content provider provides access to sensitive data, it should be protected by specifying <code>export=false</code> in the manifest or by protecting it with a permission that can be granted to other applications.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ExportedContentProvider" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Performance"></a>
+<div class="category"><a href="#" title="Return to top">Performance</a><div class="categorySeparator"></div>
+</div>
+<a name="ObsoleteLayoutParam"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ObsoleteLayoutParam: Obsolete layout params</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:67</span>: <span class="message">Invalid layout param in a <code>LinearLayout</code>: <code>layout_below</code></span><br /><pre class="errorlines">
+<span class="lineno">  64</span>                 android:id="@+id/account_list_item_amount"
+<span class="lineno">  65</span>                 android:layout_width="wrap_content"
+<span class="lineno">  66</span>                 android:layout_height="wrap_content"
+<span class="lineno">  67</span>                 <span class="errorspan">android:layout_below="@+id/account_list_item_who_owes_text"</span>
+<span class="lineno">  68</span>                 android:ellipsize="end"
+<span class="lineno">  69</span>                 android:fontFamily="sans-serif-light"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:68</span>: <span class="message">Invalid layout param in a <code>LinearLayout</code>: <code>layout_below</code></span><br /><pre class="errorlines">
+<span class="lineno">  65</span>                 android:id="@+id/fragment_account_details_amount"
+<span class="lineno">  66</span>                 android:layout_width="wrap_content"
+<span class="lineno">  67</span>                 android:layout_height="wrap_content"
+<span class="lineno">  68</span>                 <span class="errorspan">android:layout_below="@+id/fragment_account_details_who_owes_text"</span>
+<span class="lineno">  69</span>                 android:layout_marginBottom="5dp"
+<span class="lineno">  70</span>                 android:ellipsize="end"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-report_files/lint-run.png" />
+<br>
+Priority: 6 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Obsolete layout params.</div>
+<div class="explanation">
+The given layout_param is not defined for the given layout, meaning it has no effect. This usually happens when you change the parent layout or move view code around without updating the layout params. This will cause useless attribute processing at runtime, and is misleading for others reading the layout so the parameter should be removed.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ObsoleteLayoutParam" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UseValueOf"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UseValueOf: Should use <code>valueOf</code> instead of <code>new</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/java/com/samhithak/owepal/fragment/CreateAccountFragment.java">../../../src/main/java/com/samhithak/owepal/fragment/CreateAccountFragment.java</a>:151</span>: <span class="message">Use <code>Integer.valueOf(-1)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 148</span> 
+<span class="lineno"> 149</span>             switch(v.getId()){
+<span class="lineno"> 150</span>                 case R.id.fragment_create_account_create_button:
+<span class="lineno"> 151</span>                     mListener.createAccount(mName.getText().toString(), Integer.parseInt(mAccount.getText().toString()), mIsOwed ? new Integer(1) : <span class="errorspan">new Integer(-1));</span>
+<span class="lineno"> 152</span>                     break;
+<span class="lineno"> 153</span>                 default:
+</pre>
+<span class="location"><a href="../../../src/main/java/com/samhithak/owepal/fragment/CreateAccountFragment.java">../../../src/main/java/com/samhithak/owepal/fragment/CreateAccountFragment.java</a>:151</span>: <span class="message">Use <code>Integer.valueOf(1)</code> instead</span><br /><pre class="errorlines">
+<span class="lineno"> 148</span> 
+<span class="lineno"> 149</span>             switch(v.getId()){
+<span class="lineno"> 150</span>                 case R.id.fragment_create_account_create_button:
+<span class="lineno"> 151</span>                     mListener.createAccount(mName.getText().toString(), Integer.parseInt(mAccount.getText().toString()), mIsOwed ? <span class="errorspan">new Integer(1) : new Integer(-1));</span>
+<span class="lineno"> 152</span>                     break;
+<span class="lineno"> 153</span>                 default:
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-report_files/lint-run.png" />
+<br>
+Priority: 4 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Should use <code>valueOf</code> instead of <code>new</code></div>
+<div class="explanation">
+You should not call the constructor for wrapper classes directly, such as`new Integer(42)`. Instead, call the <code>valueOf</code> factory method, such as <code>Integer.valueOf(42)</code>. This will typically use less memory because common integers such as 0 and 1 will share a single instance.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UseValueOf" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="Overdraw"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">Overdraw: Overdraw: Painting regions more than once</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/fragment_navigation_drawer.xml">../../../src/main/res/layout/fragment_navigation_drawer.xml</a>:8</span>: <span class="message">Possible overdraw: Root element paints background <code>#26009688</code> with a theme that also paints a background (inferred theme is <code>@style/AppTheme</code>)</span><br /><pre class="errorlines">
+<span class="lineno">   5</span> 		  android:choiceMode="singleChoice"
+<span class="lineno">   6</span> 		  android:divider="@android:color/transparent"
+<span class="lineno">   7</span> 		  android:dividerHeight="0dp"
+<span class="lineno">   8</span> 		  <span class="errorspan">android:background="#26009688"</span>
+<span class="lineno">   9</span> 		  tools:context=".NavigationDrawerFragment"/>
+<span class="lineno">  10</span> 
+</pre>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Overdraw: Painting regions more than once.</div>
+<div class="explanation">
+If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called "overdraw".<br/>
+<br/>
+NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it's currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.<br/>
+<br/>
+If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.<br/>
+<br/>
+Of course it's possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead.<br/>
+
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "Overdraw" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedResources"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedResources: Unused resources</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/fragment_owe_pal.xml">../../../src/main/res/layout/fragment_owe_pal.xml</a></span>: <span class="message">The resource <code>R.layout.fragment_owe_pal</code> appears to be unused</span><br />
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:15</span>: <span class="message">The resource <code>R.string.add</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  12</span> 	&lt;string name="action_settings">Settings&lt;/string>
+<span class="lineno">  13</span> 	&lt;string name="action_create">Create new Account&lt;/string>
+<span class="lineno">  14</span> 	&lt;string name="create">Create&lt;/string>
+<span class="lineno">  15</span> 	&lt;string <span class="errorspan">name="add">Add&lt;/string></span>
+<span class="lineno">  16</span> 	&lt;string name="show">Show&lt;/string>
+<span class="lineno">  17</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:16</span>: <span class="message">The resource <code>R.string.show</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  13</span> 	&lt;string name="action_create">Create new Account&lt;/string>
+<span class="lineno">  14</span> 	&lt;string name="create">Create&lt;/string>
+<span class="lineno">  15</span> 	&lt;string name="add">Add&lt;/string>
+<span class="lineno">  16</span> 	&lt;string <span class="errorspan">name="show">Show&lt;/string></span>
+<span class="lineno">  17</span> 
+<span class="lineno">  18</span> 	&lt;string name="name">Name&lt;/string>
+</pre>
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:18</span>: <span class="message">The resource <code>R.string.name</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  15</span> 	&lt;string name="add">Add&lt;/string>
+<span class="lineno">  16</span> 	&lt;string name="show">Show&lt;/string>
+<span class="lineno">  17</span> 
+<span class="lineno">  18</span> 	&lt;string <span class="errorspan">name="name">Name&lt;/string></span>
+<span class="lineno">  19</span> 	&lt;string name="balance">Balance&lt;/string>
+<span class="lineno">  20</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:19</span>: <span class="message">The resource <code>R.string.balance</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  16</span> 	&lt;string name="show">Show&lt;/string>
+<span class="lineno">  17</span> 
+<span class="lineno">  18</span> 	&lt;string name="name">Name&lt;/string>
+<span class="lineno">  19</span> 	&lt;string <span class="errorspan">name="balance">Balance&lt;/string></span>
+<span class="lineno">  20</span> 
+<span class="lineno">  21</span> 	&lt;string name="owe">Owe&lt;/string>
+</pre>
+<button id="UnusedResourcesDivLink" onclick="reveal('UnusedResourcesDiv');" />+ 6 More Occurrences...</button>
+<div id="UnusedResourcesDiv" style="display: none">
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:21</span>: <span class="message">The resource <code>R.string.owe</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  18</span> 	&lt;string name="name">Name&lt;/string>
+<span class="lineno">  19</span> 	&lt;string name="balance">Balance&lt;/string>
+<span class="lineno">  20</span> 
+<span class="lineno">  21</span> 	&lt;string <span class="errorspan">name="owe">Owe&lt;/string></span>
+<span class="lineno">  22</span> 	&lt;string name="pay">Pay&lt;/string>
+<span class="lineno">  23</span> 	&lt;string name="delete">Delete&lt;/string>
+</pre>
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:22</span>: <span class="message">The resource <code>R.string.pay</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  19</span> 	&lt;string name="balance">Balance&lt;/string>
+<span class="lineno">  20</span> 
+<span class="lineno">  21</span> 	&lt;string name="owe">Owe&lt;/string>
+<span class="lineno">  22</span> 	&lt;string <span class="errorspan">name="pay">Pay&lt;/string></span>
+<span class="lineno">  23</span> 	&lt;string name="delete">Delete&lt;/string>
+<span class="lineno">  24</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:23</span>: <span class="message">The resource <code>R.string.delete</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  20</span> 
+<span class="lineno">  21</span> 	&lt;string name="owe">Owe&lt;/string>
+<span class="lineno">  22</span> 	&lt;string name="pay">Pay&lt;/string>
+<span class="lineno">  23</span> 	&lt;string <span class="errorspan">name="delete">Delete&lt;/string></span>
+<span class="lineno">  24</span> 
+<span class="lineno">  25</span> &lt;!-- TODO: Remove or change this placeholder text -->
+</pre>
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:26</span>: <span class="message">The resource <code>R.string.hello_account_fragment</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  23</span> 	&lt;string name="delete">Delete&lt;/string>
+<span class="lineno">  24</span> 
+<span class="lineno">  25</span> &lt;!-- TODO: Remove or change this placeholder text -->
+<span class="lineno">  26</span> 	&lt;string <span class="errorspan">name="hello_account_fragment">Hello blank fragment - ACCOUNTS&lt;/string></span>
+<span class="lineno">  27</span> 	&lt;string name="hello_history_fragment">Hello blank fragment - HISTORY&lt;/string>
+<span class="lineno">  28</span> 	&lt;string name="hello_settings_fragment">Hello blank fragment - SETTINGS&lt;/string>
+</pre>
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:27</span>: <span class="message">The resource <code>R.string.hello_history_fragment</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  24</span> 
+<span class="lineno">  25</span> &lt;!-- TODO: Remove or change this placeholder text -->
+<span class="lineno">  26</span> 	&lt;string name="hello_account_fragment">Hello blank fragment - ACCOUNTS&lt;/string>
+<span class="lineno">  27</span> 	&lt;string <span class="errorspan">name="hello_history_fragment">Hello blank fragment - HISTORY&lt;/string></span>
+<span class="lineno">  28</span> 	&lt;string name="hello_settings_fragment">Hello blank fragment - SETTINGS&lt;/string>
+<span class="lineno">  29</span> 	&lt;string name="hello_blank_fragment">Hello blank fragment&lt;/string>
+</pre>
+<span class="location"><a href="../../../src/main/res/values/strings.xml">../../../src/main/res/values/strings.xml</a>:29</span>: <span class="message">The resource <code>R.string.hello_blank_fragment</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  26</span> 	&lt;string name="hello_account_fragment">Hello blank fragment - ACCOUNTS&lt;/string>
+<span class="lineno">  27</span> 	&lt;string name="hello_history_fragment">Hello blank fragment - HISTORY&lt;/string>
+<span class="lineno">  28</span> 	&lt;string name="hello_settings_fragment">Hello blank fragment - SETTINGS&lt;/string>
+<span class="lineno">  29</span> 	&lt;string <span class="errorspan">name="hello_blank_fragment">Hello blank fragment&lt;/string></span>
+<span class="lineno">  30</span> 
+<span class="lineno">  31</span> &lt;/resources>
+</pre>
+</div>
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused resources.</div>
+<div class="explanation">
+Unused resources make applications larger and slow down builds.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="UnusedIds"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">UnusedIds: Unused id</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:19</span>: <span class="message">The resource <code>R.id.account_list_item_icon</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  16</span>         android:paddingTop="6dp">
+<span class="lineno">  17</span> 
+<span class="lineno">  18</span>         &lt;ImageView
+<span class="lineno">  19</span>             <span class="errorspan">android:id="@+id/account_list_item_icon"</span>
+<span class="lineno">  20</span>             android:layout_width="?android:attr/listPreferredItemHeight"
+<span class="lineno">  21</span>             android:layout_height="?android:attr/listPreferredItemHeight"
+</pre>
+<ul></ul><button id="Location1DivLink" onclick="reveal('Location1Div');" />+ 1 Additional Locations...</button>
+<div id="Location1Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:28</span>
+</ul>
+</div><br/><br/>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:18</span>: <span class="message">The resource <code>R.id.fragment_account_details_icon</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  15</span>         android:paddingTop="6dp">
+<span class="lineno">  16</span> 
+<span class="lineno">  17</span>         &lt;ImageView
+<span class="lineno">  18</span>             <span class="errorspan">android:id="@+id/fragment_account_details_icon"</span>
+<span class="lineno">  19</span>             android:layout_width="wrap_content"
+<span class="lineno">  20</span>             android:layout_height="wrap_content"
+</pre>
+<ul></ul><button id="Location2DivLink" onclick="reveal('Location2Div');" />+ 2 Additional Locations...</button>
+<div id="Location2Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:29</span>
+<li> <span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:30</span>
+</ul>
+</div><br/><br/>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:41</span>: <span class="message">The resource <code>R.id.fragment_account_details_who_owes_container</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  38</span>             tools:ignore="HardcodedText,NewApi" />
+<span class="lineno">  39</span> 
+<span class="lineno">  40</span>         &lt;LinearLayout
+<span class="lineno">  41</span>             <span class="errorspan">android:id="@+id/fragment_account_details_who_owes_container"</span>
+<span class="lineno">  42</span>             android:layout_width="wrap_content"
+<span class="lineno">  43</span>             android:layout_height="?android:attr/listPreferredItemHeight"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:12</span>: <span class="message">The resource <code>R.id.fragment_create_account_text_with_whom</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">   9</span>     tools:context=".OwePalActivity">
+<span class="lineno">  10</span> 
+<span class="lineno">  11</span>     &lt;TextView
+<span class="lineno">  12</span>         <span class="errorspan">android:id="@+id/fragment_create_account_text_with_whom"</span>
+<span class="lineno">  13</span>         android:layout_width="wrap_content"
+<span class="lineno">  14</span>         android:layout_height="wrap_content"
+</pre>
+<ul></ul><button id="Location4DivLink" onclick="reveal('Location4Div');" />+ 1 Additional Locations...</button>
+<div id="Location4Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:25</span>
+</ul>
+</div><br/><br/>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:35</span>: <span class="message">The resource <code>R.id.fragment_create_account_text_how_much</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  32</span>         android:inputType="textPersonName" />
+<span class="lineno">  33</span> 
+<span class="lineno">  34</span>     &lt;TextView
+<span class="lineno">  35</span>         <span class="errorspan">android:id="@+id/fragment_create_account_text_how_much"</span>
+<span class="lineno">  36</span>         android:layout_width="wrap_content"
+<span class="lineno">  37</span>         android:layout_height="wrap_content"
+</pre>
+<ul></ul><button id="Location5DivLink" onclick="reveal('Location5Div');" />+ 1 Additional Locations...</button>
+<div id="Location5Div" style="display: none">
+Additional locations: <ul>
+<li> <span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:49</span>
+</ul>
+</div><br/><br/>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:59</span>: <span class="message">The resource <code>R.id.fragment_create_account_radio_layout</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">  56</span>         android:inputType="numberSigned" />
+<span class="lineno">  57</span> 
+<span class="lineno">  58</span>     &lt;LinearLayout
+<span class="lineno">  59</span>         <span class="errorspan">android:id="@+id/fragment_create_account_radio_layout"</span>
+<span class="lineno">  60</span>         android:layout_width="match_parent"
+<span class="lineno">  61</span>         android:layout_height="wrap_content"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_owe_pal.xml">../../../src/main/res/layout/fragment_owe_pal.xml</a>:12</span>: <span class="message">The resource <code>R.id.section_label</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno">   9</span> 				tools:context=".OwePalActivity$PlaceholderFragment">
+<span class="lineno">  10</span> 
+<span class="lineno">  11</span> 	&lt;TextView
+<span class="lineno">  12</span> 			<span class="errorspan">android:id="@+id/section_label"</span>
+<span class="lineno">  13</span> 			android:layout_width="wrap_content"
+<span class="lineno">  14</span>             android:text="test"
+</pre>
+</div>
+<div class="metadata">Priority: 1 / 10<br/>
+Category: Performance</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Unused id.</div>
+<div class="explanation">
+This resource id definition appears not to be needed since it is not referenced from anywhere. Having id definitions, even if unused, is not necessarily a bad idea since they make working on layouts and menus easier, so there is not a strong reason to delete these.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "UnusedIds" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability:Icons"></a>
+<div class="category"><a href="#" title="Return to top">Usability:Icons</a><div class="categorySeparator"></div>
+</div>
+<a name="IconDensities"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconDensities: Icon densities validation</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/drawable-mdpi">../../../src/main/res/drawable-mdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-mdpi</code>: ic_reddit_grey600_48dp.png, ic_redo_grey600_36dp.png, ic_redo_white_36dp.png, ic_undo_grey600_36dp.png, ic_undo_white_36dp.png</span><br />
+<span class="location"><a href="../../../src/main/res/drawable-xhdpi">../../../src/main/res/drawable-xhdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-xhdpi</code>: ic_reddit_grey600_48dp.png (found in drawable-hdpi)</span><br />
+<span class="location"><a href="../../../src/main/res/drawable-xxhdpi">../../../src/main/res/drawable-xxhdpi</a></span>: <span class="message">Missing the following drawables in <code>drawable-xxhdpi</code>: ic_reddit_grey600_48dp.png, ic_redo_grey600_36dp.png, ic_redo_white_36dp.png, ic_undo_grey600_36dp.png, ic_undo_white_36dp.png</span><br />
+</div>
+<div class="metadata">Priority: 4 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Icon densities validation.</div>
+<div class="explanation">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra high). This lint check identifies icons which do not have complete coverage across the densities.<br/>
+<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconDensities" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="IconMissingDensityFolder"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">IconMissingDensityFolder: Missing density folder</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res">../../../src/main/res</a></span>: <span class="message">Missing density variation folders in <code>src/main/res</code>: drawable-xxxhdpi</span><br />
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Usability:Icons</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Missing density folder.</div>
+<div class="explanation">
+Icons will look best if a custom version is provided for each of the major screen density classes (low, medium, high, extra-high, extra-extra-high). This lint check identifies folders which are missing, such as <code>drawable-hdpi</code>.<br/>
+Low density is not really used much anymore, so this check ignores the ldpi density. To force lint to include it, set the environment variable <code>ANDROID_LINT_INCLUDE_LDPI=true</code>. For more information on current density usage, see <a href="http://developer.android.com/resources/dashboard/screens.html">http://developer.android.com/resources/dashboard/screens.html</a>
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/guide/practices/screens_support.html">http://developer.android.com/guide/practices/screens_support.html</a>
+</div><br/>To suppress this error, use the issue id "IconMissingDensityFolder" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Usability"></a>
+<div class="category"><a href="#" title="Return to top">Usability</a><div class="categorySeparator"></div>
+</div>
+<a name="ButtonStyle"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ButtonStyle: Button should be borderless</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:88</span>: <span class="message">Buttons in button bars should be borderless; use <code>style="?android:attr/buttonBarButtonStyle"</code> (and <code>?android:attr/buttonBarStyle</code> on the parent)</span><br /><pre class="errorlines">
+<span class="lineno">  85</span>         android:gravity="right"
+<span class="lineno">  86</span>         android:orientation="horizontal">
+<span class="lineno">  87</span> 
+<span class="lineno">  88</span>         <span class="errorspan">&lt;Button</span>
+<span class="lineno">  89</span>             android:id="@+id/fragment_account_details_settle_up"
+<span class="lineno">  90</span>             android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:99</span>: <span class="message">Buttons in button bars should be borderless; use <code>style="?android:attr/buttonBarButtonStyle"</code> (and <code>?android:attr/buttonBarStyle</code> on the parent)</span><br /><pre class="errorlines">
+<span class="lineno">  96</span>             android:text="Settle Up"
+<span class="lineno">  97</span>             android:textColor="@color/white" />
+<span class="lineno">  98</span> 
+<span class="lineno">  99</span>         <span class="errorspan">&lt;Button</span>
+<span class="lineno"> 100</span>             android:id="@+id/fragment_account_details_remind"
+<span class="lineno"> 101</span>             android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:68</span>: <span class="message">Buttons in button bars should be borderless; use <code>style="?android:attr/buttonBarButtonStyle"</code> (and <code>?android:attr/buttonBarStyle</code> on the parent)</span><br /><pre class="errorlines">
+<span class="lineno">  65</span>         android:gravity="center"
+<span class="lineno">  66</span>         android:layout_centerHorizontal="true" >
+<span class="lineno">  67</span> 
+<span class="lineno">  68</span>         <span class="errorspan">&lt;Button</span>
+<span class="lineno">  69</span>             android:id="@+id/fragment_create_account_radio_i_owe"
+<span class="lineno">  70</span>             android:layout_width="wrap_content"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:81</span>: <span class="message">Buttons in button bars should be borderless; use <code>style="?android:attr/buttonBarButtonStyle"</code> (and <code>?android:attr/buttonBarStyle</code> on the parent)</span><br /><pre class="errorlines">
+<span class="lineno">  78</span>             android:layout_marginRight="30dp"
+<span class="lineno">  79</span>              />
+<span class="lineno">  80</span> 
+<span class="lineno">  81</span>         <span class="errorspan">&lt;Button</span>
+<span class="lineno">  82</span>             android:id="@+id/fragment_create_account_radio_you_owe"
+<span class="lineno">  83</span>             android:layout_width="wrap_content"
+</pre>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Usability</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Button should be borderless.</div>
+<div class="explanation">
+Button bars typically use a borderless style for the buttons. Set the <code>style="?android:attr/buttonBarButtonStyle"</code> attribute on each of the buttons, and set <code>style="?android:attr/buttonBarStyle"</code> on the parent layout
+</div>
+<br/><div class="moreinfo">More info: <a href="http://developer.android.com/design/building-blocks/buttons.html">http://developer.android.com/design/building-blocks/buttons.html</a>
+</div><br/>To suppress this error, use the issue id "ButtonStyle" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Accessibility"></a>
+<div class="category"><a href="#" title="Return to top">Accessibility</a><div class="categorySeparator"></div>
+</div>
+<a name="ContentDescription"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">ContentDescription: Image without <code>contentDescription</code></a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:18</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  15</span>         android:paddingRight="6dp"
+<span class="lineno">  16</span>         android:paddingTop="6dp">
+<span class="lineno">  17</span> 
+<span class="lineno">  18</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  19</span>             android:id="@+id/account_list_item_icon"
+<span class="lineno">  20</span>             android:layout_width="?android:attr/listPreferredItemHeight"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:17</span>: <span class="message">[Accessibility] Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
+<span class="lineno">  14</span>         android:paddingRight="6dp"
+<span class="lineno">  15</span>         android:paddingTop="6dp">
+<span class="lineno">  16</span> 
+<span class="lineno">  17</span>         <span class="errorspan">&lt;ImageView</span>
+<span class="lineno">  18</span>             android:id="@+id/fragment_account_details_icon"
+<span class="lineno">  19</span>             android:layout_width="wrap_content"
+</pre>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT & Android Studio/IntelliJ&nbsp;<img alt="Fix" border="0" align="top" src="lint-report_files/lint-run.png" />
+<br>
+Priority: 3 / 10<br/>
+Category: Accessibility</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Image without <code>contentDescription</code></div>
+<div class="explanation">
+Non-textual widgets like ImageViews and ImageButtons should use the <code>contentDescription</code> attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.<br/>
+<br/>
+Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, just suppress the lint warning with a tools:ignore="ContentDescription" attribute.<br/>
+<br/>
+Note that for text fields, you should not set both the <code>hint</code> and the <code>contentDescription</code> attributes since the hint will never be shown. Just set the <code>hint</code>. See <a href="http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases">http://developer.android.com/guide/topics/ui/accessibility/checklist.html#special-cases</a>.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "ContentDescription" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Internationalization"></a>
+<div class="category"><a href="#" title="Return to top">Internationalization</a><div class="categorySeparator"></div>
+</div>
+<a name="HardcodedText"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">HardcodedText: Hardcoded text</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/fragment_account.xml">../../../src/main/res/layout/fragment_account.xml</a>:25</span>: <span class="message">[I18N] Hardcoded string "you owe:", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  22</span>                 android:layout_width="wrap_content"
+<span class="lineno">  23</span>                 android:layout_height="wrap_content"
+<span class="lineno">  24</span>                 android:textColor="@color/negative_balance_color"
+<span class="lineno">  25</span>                 <span class="errorspan">android:text="you owe:" /></span>
+<span class="lineno">  26</span> 
+<span class="lineno">  27</span>             &lt;TextView
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account.xml">../../../src/main/res/layout/fragment_account.xml</a>:32</span>: <span class="message">[I18N] Hardcoded string "$", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  29</span>                 android:layout_height="wrap_content"
+<span class="lineno">  30</span>                 android:layout_width="wrap_content"
+<span class="lineno">  31</span>                 android:textColor="@color/primary_color"
+<span class="lineno">  32</span>                 <span class="errorspan">android:text="$" /></span>
+<span class="lineno">  33</span>         &lt;/LinearLayout>
+<span class="lineno">  34</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account.xml">../../../src/main/res/layout/fragment_account.xml</a>:52</span>: <span class="message">[I18N] Hardcoded string "you are owed:", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  49</span>                 android:layout_width="wrap_content"
+<span class="lineno">  50</span>                 android:layout_height="wrap_content"
+<span class="lineno">  51</span>                 android:textColor="@color/primary_color"
+<span class="lineno">  52</span>                 <span class="errorspan">android:text="you are owed:" /></span>
+<span class="lineno">  53</span> 
+<span class="lineno">  54</span>             &lt;TextView
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account.xml">../../../src/main/res/layout/fragment_account.xml</a>:59</span>: <span class="message">[I18N] Hardcoded string "$", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  56</span>                 android:layout_width="wrap_content"
+<span class="lineno">  57</span>                 android:layout_height="wrap_content"
+<span class="lineno">  58</span>                 android:textColor="@color/primary_color"
+<span class="lineno">  59</span>                 <span class="errorspan">android:text="$" /></span>
+<span class="lineno">  60</span>         &lt;/LinearLayout>
+<span class="lineno">  61</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account.xml">../../../src/main/res/layout/fragment_account.xml</a>:80</span>: <span class="message">[I18N] Hardcoded string "total balance:", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  77</span>                 android:layout_width="wrap_content"
+<span class="lineno">  78</span>                 android:layout_height="wrap_content"
+<span class="lineno">  79</span>                 android:textColor="@color/primary_color"
+<span class="lineno">  80</span>                 <span class="errorspan">android:text="total balance:" /></span>
+<span class="lineno">  81</span> 
+<span class="lineno">  82</span>             &lt;TextView
+</pre>
+<button id="HardcodedTextDivLink" onclick="reveal('HardcodedTextDiv');" />+ 14 More Occurrences...</button>
+<div id="HardcodedTextDiv" style="display: none">
+<span class="location"><a href="../../../src/main/res/layout/fragment_account.xml">../../../src/main/res/layout/fragment_account.xml</a>:87</span>: <span class="message">[I18N] Hardcoded string "$", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  84</span>                 android:layout_width="wrap_content"
+<span class="lineno">  85</span>                 android:layout_height="wrap_content"
+<span class="lineno">  86</span>                 android:textColor="@color/primary_color"
+<span class="lineno">  87</span>                 <span class="errorspan">android:text="$" /></span>
+<span class="lineno">  88</span>         &lt;/LinearLayout>
+<span class="lineno">  89</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account.xml">../../../src/main/res/layout/fragment_account.xml</a>:118</span>: <span class="message">[I18N] Hardcoded string "Start adding accounts", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 115</span>             android:layout_height="match_parent"
+<span class="lineno"> 116</span>             android:fontFamily="sans-serif-light"
+<span class="lineno"> 117</span>             android:gravity="center"
+<span class="lineno"> 118</span>             <span class="errorspan">android:text="Start adding accounts"</span>
+<span class="lineno"> 119</span>             android:textAppearance="?android:attr/textAppearanceLarge"
+<span class="lineno"> 120</span>             android:visibility="invisible" />
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:96</span>: <span class="message">[I18N] Hardcoded string "Settle Up", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  93</span>             android:layout_marginRight="10dp"
+<span class="lineno">  94</span>             android:background="@color/dark_primary_color"
+<span class="lineno">  95</span>             android:padding="10dp"
+<span class="lineno">  96</span>             <span class="errorspan">android:text="Settle Up"</span>
+<span class="lineno">  97</span>             android:textColor="@color/white" />
+<span class="lineno">  98</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:107</span>: <span class="message">[I18N] Hardcoded string "Remind", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 104</span>             android:layout_marginLeft="10dp"
+<span class="lineno"> 105</span>             android:background="@color/dark_primary_color"
+<span class="lineno"> 106</span>             android:padding="10dp"
+<span class="lineno"> 107</span>             <span class="errorspan">android:text="Remind"</span>
+<span class="lineno"> 108</span>             android:textColor="@color/white" />
+<span class="lineno"> 109</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:118</span>: <span class="message">[I18N] Hardcoded string "Details:", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 115</span>         android:background="@color/primary_color"
+<span class="lineno"> 116</span>         android:gravity="left"
+<span class="lineno"> 117</span>         android:padding="5dp"
+<span class="lineno"> 118</span>         <span class="errorspan">android:text="Details:" /></span>
+<span class="lineno"> 119</span> 
+<span class="lineno"> 120</span>     &lt;View
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:145</span>: <span class="message">[I18N] Hardcoded string "No Recent transactions", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno"> 142</span>             android:layout_height="match_parent"
+<span class="lineno"> 143</span>             android:fontFamily="sans-serif-light"
+<span class="lineno"> 144</span>             android:gravity="center"
+<span class="lineno"> 145</span>             <span class="errorspan">android:text="No Recent transactions"</span>
+<span class="lineno"> 146</span>             android:textAppearance="?android:attr/textAppearanceLarge"
+<span class="lineno"> 147</span>             android:visibility="invisible" />
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:19</span>: <span class="message">[I18N] Hardcoded string "With whom?", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  16</span>         android:layout_marginTop="20dp"
+<span class="lineno">  17</span>         android:textSize="25sp"
+<span class="lineno">  18</span>         android:textColor="@color/dark_primary_color"
+<span class="lineno">  19</span>         <span class="errorspan">android:text="With whom?" /></span>
+<span class="lineno">  20</span> 
+<span class="lineno">  21</span>     &lt;EditText
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:29</span>: <span class="message">[I18N] Hardcoded string "(name or email or phone number)", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  26</span>         android:layout_marginTop="20dp"
+<span class="lineno">  27</span>         android:layout_marginLeft="20dp"
+<span class="lineno">  28</span>         android:layout_marginRight="20dp"
+<span class="lineno">  29</span>         <span class="errorspan">android:hint="(name or email or phone number)"</span>
+<span class="lineno">  30</span>         android:textColorHint="@android:color/darker_gray"
+<span class="lineno">  31</span>         android:gravity="center"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:43</span>: <span class="message">[I18N] Hardcoded string "How Much?", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  40</span>         android:layout_marginTop="40dp"
+<span class="lineno">  41</span>         android:textColor="@color/dark_primary_color"
+<span class="lineno">  42</span>         android:textSize="25sp"
+<span class="lineno">  43</span>         <span class="errorspan">android:text="How Much?" /></span>
+<span class="lineno">  44</span> 
+<span class="lineno">  45</span>     &lt;EditText
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:52</span>: <span class="message">[I18N] Hardcoded string "$ Amount", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  49</span>         android:layout_below="@+id/fragment_create_account_text_how_much"
+<span class="lineno">  50</span>         android:layout_marginTop="20dp"
+<span class="lineno">  51</span>         android:gravity="center"
+<span class="lineno">  52</span>         <span class="errorspan">android:hint="$ Amount"</span>
+<span class="lineno">  53</span>         android:textColorHint="@android:color/darker_gray"
+<span class="lineno">  54</span>         android:layout_marginLeft="50dp"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:74</span>: <span class="message">[I18N] Hardcoded string "I Owe Them", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  71</span>             android:layout_height="wrap_content"
+<span class="lineno">  72</span>             android:textColor="#000000"
+<span class="lineno">  73</span>             android:drawableTop="@drawable/ic_redo_grey600_36dp"
+<span class="lineno">  74</span>             <span class="errorspan">android:text="I Owe Them"</span>
+<span class="lineno">  75</span>             android:padding="10dp"
+<span class="lineno">  76</span>             android:background="@null"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:87</span>: <span class="message">[I18N] Hardcoded string "They Owe Me", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  84</span>             android:layout_height="wrap_content"
+<span class="lineno">  85</span>             android:textColor="#000000"
+<span class="lineno">  86</span>             android:layout_marginLeft="30dp"
+<span class="lineno">  87</span>             <span class="errorspan">android:text="They Owe Me"</span>
+<span class="lineno">  88</span>             android:padding="10dp"
+<span class="lineno">  89</span>             android:background="@null"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_history.xml">../../../src/main/res/layout/fragment_history.xml</a>:22</span>: <span class="message">[I18N] Hardcoded string "No Transactions to display", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  19</span> 			android:layout_height="match_parent"
+<span class="lineno">  20</span> 			android:fontFamily="sans-serif-light"
+<span class="lineno">  21</span> 			android:gravity="center"
+<span class="lineno">  22</span> 			<span class="errorspan">android:text="No Transactions to display"</span>
+<span class="lineno">  23</span> 			android:visibility="invisible"
+<span class="lineno">  24</span> 			android:textAppearance="?android:attr/textAppearanceLarge" />
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_owe_pal.xml">../../../src/main/res/layout/fragment_owe_pal.xml</a>:14</span>: <span class="message">[I18N] Hardcoded string "test", should use <code>@string</code> resource</span><br /><pre class="errorlines">
+<span class="lineno">  11</span> 	&lt;TextView
+<span class="lineno">  12</span> 			android:id="@+id/section_label"
+<span class="lineno">  13</span> 			android:layout_width="wrap_content"
+<span class="lineno">  14</span>             <span class="errorspan">android:text="test"</span>
+<span class="lineno">  15</span> 			android:layout_height="wrap_content"/>
+<span class="lineno">  16</span> 
+</pre>
+</div>
+</div>
+<div class="metadata">Note: This issue has an associated quickfix operation in Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-report_files/lint-run.png" />
+<br>
+Priority: 5 / 10<br/>
+Category: Internationalization</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Hardcoded text.</div>
+<div class="explanation">
+Hardcoding text attributes directly in layout files is bad for several reasons:<br/>
+<br/>
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)<br/>
+<br/>
+* The application cannot be translated to other languages by just adding new translations for existing string resources.<br/>
+<br/>
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "HardcodedText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="Bi-directional Text"></a>
+<div class="category"><a href="#" title="Return to top">Bi-directional Text</a><div class="categorySeparator"></div>
+</div>
+<a name="RtlSymmetry"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">RtlSymmetry: Padding and margin symmetry</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:14</span>: <span class="message">When you define <code>paddingEnd</code> you should probably also define <code>paddingStart</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">  11</span>         android:gravity="center_vertical"
+<span class="lineno">  12</span>         android:orientation="horizontal"
+<span class="lineno">  13</span>         android:paddingBottom="6dp"
+<span class="lineno">  14</span>         <span class="errorspan">android:paddingEnd="6dp"</span>
+<span class="lineno">  15</span>         android:paddingRight="6dp"
+<span class="lineno">  16</span>         android:paddingTop="6dp">
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:15</span>: <span class="message">When you define <code>paddingRight</code> you should probably also define <code>paddingLeft</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">  12</span>         android:orientation="horizontal"
+<span class="lineno">  13</span>         android:paddingBottom="6dp"
+<span class="lineno">  14</span>         android:paddingEnd="6dp"
+<span class="lineno">  15</span>         <span class="errorspan">android:paddingRight="6dp"</span>
+<span class="lineno">  16</span>         android:paddingTop="6dp">
+<span class="lineno">  17</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:13</span>: <span class="message">When you define <code>paddingEnd</code> you should probably also define <code>paddingStart</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">  10</span>         android:gravity="center_vertical"
+<span class="lineno">  11</span>         android:orientation="horizontal"
+<span class="lineno">  12</span>         android:paddingBottom="6dp"
+<span class="lineno">  13</span>         <span class="errorspan">android:paddingEnd="6dp"</span>
+<span class="lineno">  14</span>         android:paddingRight="6dp"
+<span class="lineno">  15</span>         android:paddingTop="6dp">
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:14</span>: <span class="message">When you define <code>paddingRight</code> you should probably also define <code>paddingLeft</code> for right-to-left symmetry</span><br /><pre class="errorlines">
+<span class="lineno">  11</span>         android:orientation="horizontal"
+<span class="lineno">  12</span>         android:paddingBottom="6dp"
+<span class="lineno">  13</span>         android:paddingEnd="6dp"
+<span class="lineno">  14</span>         <span class="errorspan">android:paddingRight="6dp"</span>
+<span class="lineno">  15</span>         android:paddingTop="6dp">
+<span class="lineno">  16</span> 
+</pre>
+</div>
+<div class="metadata">Priority: 6 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Padding and margin symmetry.</div>
+<div class="explanation">
+If you specify padding or margin on the left side of a layout, you should probably also specify padding on the right side (and vice versa) for right-to-left layout symmetry.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlSymmetry" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlHardcoded"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">RtlHardcoded: Using left/right instead of start/end attributes</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:28</span>: <span class="message">Consider adding <code>android:layout_toEndOf="@+id/account_list_item_icon"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  25</span>             android:id="@+id/account_list_item_name"
+<span class="lineno">  26</span>             android:layout_width="wrap_content"
+<span class="lineno">  27</span>             android:layout_height="?android:attr/listPreferredItemHeight"
+<span class="lineno">  28</span>             <span class="errorspan">android:layout_toRightOf="@+id/account_list_item_icon"</span>
+<span class="lineno">  29</span>             android:ellipsize="end"
+<span class="lineno">  30</span>             android:fontFamily="sans-serif-light"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/account_list_item.xml">../../../src/main/res/layout/account_list_item.xml</a>:47</span>: <span class="message">Consider adding <code>android:layout_marginEnd="15dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  44</span>             android:layout_height="?android:attr/listPreferredItemHeight"
+<span class="lineno">  45</span>             android:layout_alignParentEnd="true"
+<span class="lineno">  46</span>             android:layout_alignParentRight="true"
+<span class="lineno">  47</span>             <span class="errorspan">android:layout_marginRight="15dp"</span>
+<span class="lineno">  48</span>             android:gravity="center_horizontal"
+<span class="lineno">  49</span>             android:orientation="vertical">
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:28</span>: <span class="message">Consider adding <code>android:layout_marginStart="20dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  25</span>             android:layout_width="wrap_content"
+<span class="lineno">  26</span>             android:layout_height="?android:attr/listPreferredItemHeight"
+<span class="lineno">  27</span>             android:layout_centerVertical="true"
+<span class="lineno">  28</span>             <span class="errorspan">android:layout_marginLeft="20dp"</span>
+<span class="lineno">  29</span>             android:layout_toEndOf="@+id/fragment_account_details_icon"
+<span class="lineno">  30</span>             android:layout_toRightOf="@+id/fragment_account_details_icon"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:48</span>: <span class="message">Consider adding <code>android:layout_marginEnd="15dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  45</span>             android:layout_alignParentEnd="true"
+<span class="lineno">  46</span>             android:layout_alignParentRight="true"
+<span class="lineno">  47</span>             android:layout_centerVertical="true"
+<span class="lineno">  48</span>             <span class="errorspan">android:layout_marginRight="15dp"</span>
+<span class="lineno">  49</span>             android:gravity="center"
+<span class="lineno">  50</span>             android:orientation="vertical">
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:84</span>: <span class="message">Consider adding <code>android:layout_marginEnd="10dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  81</span>         android:layout_width="match_parent"
+<span class="lineno">  82</span>         android:layout_height="wrap_content"
+<span class="lineno">  83</span>         android:layout_marginBottom="10dp"
+<span class="lineno">  84</span>         <span class="errorspan">android:layout_marginRight="10dp"</span>
+<span class="lineno">  85</span>         android:gravity="right"
+<span class="lineno">  86</span>         android:orientation="horizontal">
+</pre>
+<button id="RtlHardcodedDivLink" onclick="reveal('RtlHardcodedDiv');" />+ 6 More Occurrences...</button>
+<div id="RtlHardcodedDiv" style="display: none">
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:85</span>: <span class="message">Use "<code>end</code>" instead of "<code>right</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno">  82</span>         android:layout_height="wrap_content"
+<span class="lineno">  83</span>         android:layout_marginBottom="10dp"
+<span class="lineno">  84</span>         android:layout_marginRight="10dp"
+<span class="lineno">  85</span>         <span class="errorspan">android:gravity="right"</span>
+<span class="lineno">  86</span>         android:orientation="horizontal">
+<span class="lineno">  87</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:93</span>: <span class="message">Consider adding <code>android:layout_marginEnd="10dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  90</span>             android:layout_width="wrap_content"
+<span class="lineno">  91</span>             android:layout_height="wrap_content"
+<span class="lineno">  92</span>             android:layout_gravity="center"
+<span class="lineno">  93</span>             <span class="errorspan">android:layout_marginRight="10dp"</span>
+<span class="lineno">  94</span>             android:background="@color/dark_primary_color"
+<span class="lineno">  95</span>             android:padding="10dp"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:104</span>: <span class="message">Consider adding <code>android:layout_marginStart="10dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno"> 101</span>             android:layout_width="wrap_content"
+<span class="lineno"> 102</span>             android:layout_height="wrap_content"
+<span class="lineno"> 103</span>             android:layout_gravity="center"
+<span class="lineno"> 104</span>             <span class="errorspan">android:layout_marginLeft="10dp"</span>
+<span class="lineno"> 105</span>             android:background="@color/dark_primary_color"
+<span class="lineno"> 106</span>             android:padding="10dp"
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_account_details.xml">../../../src/main/res/layout/fragment_account_details.xml</a>:116</span>: <span class="message">Use "<code>start</code>" instead of "<code>left</code>" to ensure correct behavior in right-to-left locales</span><br /><pre class="errorlines">
+<span class="lineno"> 113</span>         android:layout_width="match_parent"
+<span class="lineno"> 114</span>         android:layout_height="wrap_content"
+<span class="lineno"> 115</span>         android:background="@color/primary_color"
+<span class="lineno"> 116</span>         <span class="errorspan">android:gravity="left"</span>
+<span class="lineno"> 117</span>         android:padding="5dp"
+<span class="lineno"> 118</span>         android:text="Details:" />
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:78</span>: <span class="message">Consider adding <code>android:layout_marginEnd="30dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  75</span>             android:padding="10dp"
+<span class="lineno">  76</span>             android:background="@null"
+<span class="lineno">  77</span>             android:enabled="false"
+<span class="lineno">  78</span>             <span class="errorspan">android:layout_marginRight="30dp"</span>
+<span class="lineno">  79</span>              />
+<span class="lineno">  80</span> 
+</pre>
+<span class="location"><a href="../../../src/main/res/layout/fragment_create_account.xml">../../../src/main/res/layout/fragment_create_account.xml</a>:86</span>: <span class="message">Consider adding <code>android:layout_marginStart="30dp"</code> to better support right-to-left layouts</span><br /><pre class="errorlines">
+<span class="lineno">  83</span>             android:layout_width="wrap_content"
+<span class="lineno">  84</span>             android:layout_height="wrap_content"
+<span class="lineno">  85</span>             android:textColor="#000000"
+<span class="lineno">  86</span>             <span class="errorspan">android:layout_marginLeft="30dp"</span>
+<span class="lineno">  87</span>             android:text="They Owe Me"
+<span class="lineno">  88</span>             android:padding="10dp"
+</pre>
+</div>
+</div>
+<div class="metadata">Priority: 5 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using left/right instead of start/end attributes.</div>
+<div class="explanation">
+Using <code>Gravity#LEFT</code> and <code>Gravity#RIGHT</code> can lead to problems when a layout is rendered in locales where text flows from right to left. Use <code>Gravity#START</code> and <code>Gravity#END</code> instead. Similarly, in XML <code>gravity</code> and <code>layout_gravity</code> attributes, use <code>start</code> rather than <code>left</code>.<br/>
+For XML attributes such as paddingLeft and <code>layout_marginLeft</code>, use <code>paddingStart</code> and <code>layout_marginStart</code>. <b>NOTE</b>: If your <code>minSdkVersion</code> is less than 17, you should add <b>both</b> the older left/right attributes <b>as well as</b> the new start/right attributes. On older platforms, where RTL is not supported and the start/right attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.<br/>
+(Note: For <code>Gravity#LEFT</code> and <code>Gravity#START</code>, you can use these constants even when targeting older platforms, because the <code>start</code> bitmask is a superset of the <code>left</code> bitmask. Therefore, you can use <code>gravity="start"</code> rather than <code>gravity="left|start"</code>.)
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlHardcoded" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+<a name="RtlEnabled"></a>
+<div class="issue">
+<div class="id"><a href="#" title="Return to top">RtlEnabled: Using RTL attributes without enabling RTL support</a><div class="issueSeparator"></div>
+</div>
+<div class="warningslist">
+<span class="location"><a href="../../../src/main/AndroidManifest.xml">../../../src/main/AndroidManifest.xml</a></span>: <span class="message">The project references RTL attributes, but does not explicitly enable or disable RTL support with <code>android:supportsRtl</code> in the manifest</span><br />
+</div>
+<div class="metadata">Priority: 3 / 10<br/>
+Category: Bi-directional Text</div>
+Severity: <span class="warning">Warning</span><div class="summary">
+Explanation: Using RTL attributes without enabling RTL support.</div>
+<div class="explanation">
+To enable right-to-left support, when running on API 17 and higher, you must set the <code>android:supportsRtl</code> attribute in the manifest <code>&lt;application></code> element.<br/>
+If you have started adding RTL attributes, but have not yet finished the migration, you can set the attribute to false to satisfy this lint check.
+</div>
+<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "RtlEnabled" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+</div>
+
+<a name="MissingIssues"></a>
+<div class="category">Disabled Checks<div class="categorySeparator"></div>
+</div>
+The following issues were not run by lint, either because the check is not enabled by default, or because it was disabled with a command line flag or via one or more lint.xml configuration files in the project directories.
+<br/><br/>
+
+<a name="SuppressInfo"></a>
+<div class="category">Suppressing Warnings and Errors<div class="categorySeparator"></div>
+</div>
+Lint errors can be suppressed in a variety of ways:<br/>
+<br/>
+1. With a @SuppressLint annotation in the Java code<br/>
+2. With a tools:ignore attribute in the XML file<br/>
+3. With a lint.xml configuration file in the project<br/>
+4. With a lint.xml configuration file passed to lint via the --config flag<br/>
+5. With the --ignore flag passed to lint.<br/>
+<br/>
+To suppress a lint warning with an annotation, add a @SuppressLint("id") annotation on the class, method or variable declaration closest to the warning instance you want to disable. The id can be one or more issue id's, such as "UnusedResources" or {"UnusedResources","UnusedIds"}, or it can be "all" to suppress all lint warnings in the given scope.<br/>
+<br/>
+To suppress a lint warning in an XML file, add a tools:ignore="id" attribute on the element containing the error, or one of its surrounding elements. You also need to define the namespace for the tools prefix on the root element in your document, next to the xmlns:android declaration:<br/>
+* xmlns:tools="http://schemas.android.com/tools"<br/>
+<br/>
+To suppress lint warnings with a configuration XML file, create a file named lint.xml and place it at the root directory of the project in which it applies. (If you use the Eclipse plugin's Lint view, you can suppress errors there via the toolbar and Eclipse will create the lint.xml file for you.).<br/>
+<br/>
+The format of the lint.xml file is something like the following:<br/>
+<br/>
+&lt;?xml version="1.0" encoding="UTF-8"?><br/>
+&lt;lint><br/>
+    &lt;!-- Disable this given check in this project --><br/>
+    &lt;issue id="IconMissingDensityFolder" severity="ignore" /><br/>
+<br/>
+    &lt;!-- Ignore the ObsoleteLayoutParam issue in the given files --><br/>
+    &lt;issue id="ObsoleteLayoutParam"><br/>
+        &lt;ignore path="res/layout/activation.xml" /><br/>
+        &lt;ignore path="res/layout-xlarge/activation.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Ignore the UselessLeaf issue in the given file --><br/>
+    &lt;issue id="UselessLeaf"><br/>
+        &lt;ignore path="res/layout/main.xml" /><br/>
+    &lt;/issue><br/>
+<br/>
+    &lt;!-- Change the severity of hardcoded strings to "error" --><br/>
+    &lt;issue id="HardcodedText" severity="error" /><br/>
+&lt;/lint><br/>
+<br/>
+To suppress lint checks from the command line, pass the --ignore flag with a comma separated list of ids to be suppressed, such as:<br/>
+"lint --ignore UnusedResources,UselessLeaf /my/project/path"<br/>
+
+
+</body>
+</html>

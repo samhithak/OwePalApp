@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".OwePalActivity">
+
+    <TextView
+        android:id="@+id/fragment_create_account_text_with_whom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/dark_primary_color"
+        android:text="With whom?" />
+
+    <EditText
+        android:id="@+id/fragment_create_account_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_create_account_text_with_whom"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="(name or email or phone number)"
+        android:textColorHint="@android:color/darker_gray"
+        android:gravity="center"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/fragment_create_account_text_how_much"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_create_account_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/dark_primary_color"
+        android:textSize="25sp"
+        android:text="How Much?" />
+
+    <EditText
+        android:id="@+id/fragment_create_account_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_create_account_text_how_much"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="$ Amount"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:inputType="numberSigned" />
+
+    <LinearLayout
+        android:id="@+id/fragment_create_account_radio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_create_account_amount"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/fragment_create_account_radio_i_owe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:drawableTop="@drawable/ic_redo_grey600_36dp"
+            android:text="I Owe Them"
+            android:padding="10dp"
+            android:background="@null"
+            android:enabled="false"
+            android:layout_marginRight="30dp"
+             />
+
+        <Button
+            android:id="@+id/fragment_create_account_radio_you_owe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="30dp"
+            android:text="They Owe Me"
+            android:padding="10dp"
+            android:background="@null"
+            android:enabled="false"
+            android:drawableTop="@drawable/ic_undo_grey600_36dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_create_account_create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_primary_color"
+        android:textColor="@color/white"
+        android:text="@string/create"
+        android:enabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

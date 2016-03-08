@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp">
+
+        <ImageView
+            android:id="@+id/account_list_item_icon"
+            android:layout_width="?android:attr/listPreferredItemHeight"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:src="@drawable/ic_reddit_grey600_18dp" />
+
+        <TextView
+            android:id="@+id/account_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_toRightOf="@+id/account_list_item_icon"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:paddingEnd="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:text="Name"
+            android:textColor="@color/primary_color"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,NewApi" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/account_list_item_who_owes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:text="Who owes"
+                android:textColor="@color/primary_color"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                tools:ignore="HardcodedText,NewApi" />
+
+            <TextView
+                android:id="@+id/account_list_item_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_list_item_who_owes_text"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:text="$$"
+                android:textColor="@color/primary_color"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                tools:ignore="HardcodedText,NewApi" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
