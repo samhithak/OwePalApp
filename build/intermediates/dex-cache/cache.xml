@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/jacoco/jacocoagent.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e084e6b8a000c2a3fd71fa1c6f603f47f90ea7c4">
+        <dex dex="/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/pre-dexed/debug/jacocoagent-66365c77c103091897848f06f971488ab1e11f68.jar" />
+    </item>
+    <item
         jar="/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -14,6 +21,13 @@
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
         <dex dex="/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/pre-dexed/debug/classes-c94fd803bd9b0f60cd256ce614f9a699a986de57.jar" />
+    </item>
+    <item
+        jar="/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/pre-dexed/debug/classes-c67c0c85f323786211da2d7d3501a8e82fe1a129.jar" />
     </item>
     <item
         jar="/Users/skamaraju/Mobile/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
@@ -30,11 +44,25 @@
         <dex dex="/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/pre-dexed/debug/classes-49ffc8519076f8f15072267a42265cf54571b96c.jar" />
     </item>
     <item
+        jar="/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/pre-dexed/debug/classes-977d8fe9d0c0ee39781b8c7952a58ab8bd064190.jar" />
+    </item>
+    <item
         jar="/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/jacoco/jacocoagent.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="e084e6b8a000c2a3fd71fa1c6f603f47f90ea7c4">
         <dex dex="/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/pre-dexed/debug/jacocoagent-ec99c4ef9129f3857bb2659274c334b00600435e.jar" />
+    </item>
+    <item
+        jar="/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-a4cbadc25bcd6e8889c844765f6a051e8297742a.jar" />
     </item>
 
 </items>

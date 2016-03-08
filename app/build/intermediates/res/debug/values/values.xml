@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -18,10 +18,10 @@
     <color name="abc_search_url_text_selected">@android:color/black</color>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="actionbar_text">#FFFFFF</color>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
@@ -35,10 +35,10 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="dark_primary_color">#00796B</color>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
@@ -55,11 +55,11 @@
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="negative_balance_color">#F44336</color>
     <color name="primary_color">#99009688</color>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
@@ -77,7 +77,7 @@
     <color name="secondary_text_disabled_material_light">#24000000</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="white">#FFFFFF</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
@@ -103,7 +103,7 @@
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="theme"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
     <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
@@ -142,11 +142,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -154,10 +154,10 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="navigation_drawer_width">240dp</dimen>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -185,7 +185,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_create">Create new Account</string>
     <string name="action_settings">Settings</string>
@@ -207,12 +207,12 @@
     <string name="title_accounts">Home</string>
     <string name="title_history">Recent Activity</string>
     <string name="title_settings">Settings</string>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="CustomActionBarTheme">
 		<!-- Customize your theme here. -->
 	</style>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
         <item name="android:textColor">?android:textColorPrimary</item>
@@ -966,7 +966,7 @@
         <item name="android:scaleType">center</item>
         <item name="android:background">?attr/selectableItemBackground</item>
     </style>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/src/main/res/values/themes.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/src/main/res/values/themes.xml -->
     <eat-comment/>
     <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:actionBarStyle">@style/MyActionBar</item>
@@ -992,7 +992,7 @@
         <item name="android:textColor">@color/actionbar_text</item>
         <!-- The textColor property is backward compatible with the Support Library -->
     </style>
-    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApplication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/skamaraju/AndroidOfficeHours/OwePalApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
